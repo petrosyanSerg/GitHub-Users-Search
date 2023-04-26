@@ -21,7 +21,7 @@ function App(): ReturnType<FC> {
       setError(false);
     };
 
-    getUser().catch((err) => setError(true));
+    getUser().catch(() => setError(true));
   }, [username]);
 
   function SearchUser(user: string) {
