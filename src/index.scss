@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--family: "Josefin Sans", sans-serif;
+	--fs-sm: 14px;
+	--fs-md: 16px;
+	--fs-lg: 20px;
+	--fs-xl: 30px;
+	--fw-light: 300;
+	--fw-normal: 400;
+	--fw-bold: 600;
+
+	--brd-rad: 15px;
+}
+
+body[data-theme="dark"] {
+	--color-text: #dfdfe4;
+	--color-bg: #141c2f;
+	--color-ui-base: #1f2a48;
+	--shadow: rgba(245, 245, 245, 0.5) 0px 0px 8px;
+}
+
+body[data-theme="light"] {
+	--color-text: #35373d;
+	--color-bg: #f5f8ff;
+	--color-ui-base: #fefefe;
+	--shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+body {
+	font-family: var(--family);
+	color: var(--color-text);
+	font-weight: var(--fw-light);
+	background-color: var(--color-bg);
+	transition: all 300ms ease;
+}
+
+#root {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	padding-top: 2rem;
+}
+
+.container {
+	width: 70%;
+}
+
+.error {
+	padding: 1rem;
+	margin: 1rem;
+	text-align: center;
+	color: rgb(104, 2, 2);
+}
+
+
+@media only screen and (max-width: 1050px) {
+	.container {
+		width: 90%;
+	}
+}
