@@ -5,11 +5,12 @@ import Search from "./Components/Search/Search";
 import Body from "./Components/Body/Body";
 import axios from "axios";
 
+import { myData } from "./assets/data";
 import "./index.scss";
 
 function App(): ReturnType<FC> {
   const [username, setUsername] = useState<string>("petrosyanSerg");
-  const [data, setData] = useState<IUserGit | {}>({});
+  const [data, setData] = useState<IUserGit>(myData);
   const [error, setError] = useState<boolean>(false);
 
   useEffect(() => {

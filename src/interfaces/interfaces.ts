@@ -1,4 +1,6 @@
 export interface IUserGit {
+  id: number;
+  node_id: string;
   html_url: string;
   login: string;
   name: string;
@@ -19,8 +21,8 @@ export interface IUserGit {
   company: string | null;
   blog: string;
   location: string;
-  email: string;
-  hireable: string;
+  email: string | null;
+  hireable: string | null;
   bio: string;
   twitter_username: string | null;
   public_repos: number;
